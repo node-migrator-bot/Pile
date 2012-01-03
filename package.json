@@ -1,0 +1,21 @@
+{
+    "name": "Pile",
+    "version": "0.0.1",
+    "directories": {
+        "lib": "./lib"
+    },
+    "main": "./lib/pile",
+    "engines": {
+        "node" : ">=0.2.0"
+    },
+    "dependencies": {
+    },
+    "description": "An everything dev manager",
+    "author": "Wess Cope <wess@frenzylabs.com>",
+    "homepage": "www.pilejs.com",
+    "repository" :
+    {
+        "type" : "git",
+        "url" : "git@github.com:wess/Pile.git"
+    }
+}
