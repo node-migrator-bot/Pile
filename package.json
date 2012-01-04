@@ -1,21 +1,15 @@
 {
-    "name": "Pile",
-    "version": "0.0.1",
-    "directories": {
-        "lib": "./lib"
+    "author"        : "Wess Cope <wess@frenzylabs.com>",
+    "name"          : "pilejs",
+    "description"   : "An everything dev manager",
+    "version"       : "0.0.1",
+    "homepage"      : "www.pilejs.com",
+    "repository"    : {
+        "type"  : "git",
+        "url"   : "git://github.com/wess/Pile.git"
     },
-    "main": "./lib/pile",
-    "engines": {
-        "node" : ">=0.6.0"
-    },
-    "dependencies": {
-    },
-    "description": "An everything dev manager",
-    "author": "Wess Cope <wess@frenzylabs.com>",
-    "homepage": "www.pilejs.com",
-    "repository" :
-    {
-        "type" : "git",
-        "url" : "git@github.com:wess/Pile.git"
-    }
+    "engines"       : { "node"  : "~0.6.2"},
+    "main"          : "./lib/pile",
+    "bin"           : {"pile": "./lib/pile"},
+    "preferGlobal": true
 }
