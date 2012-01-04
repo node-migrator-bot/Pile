@@ -2,41 +2,51 @@
  * This is an example Stackfile
  */
 
- // REMOVE 
- console.log("---------------------------------\nPlease configure your stackfile\nbefore trying to run pile\n---------------------------------"); process.exit(-1);
+/* PATHS */
+var jsPath  = "javascripts",
+    cssPath = "stylesheets";
+/* PATHS */
 
+/* LIBS */
+var libs = [
+   {
+      //name: "jquery.min.js", 
+      url : "http://code.jquery.com/jquery-1.7.1.min.js",
+      destination: jsPath,
+      //override: true // To redownload/override file (defaults to false)
+   },
+   {
+      //name: "less.min.js",
+      url: "http://lesscss.googlecode.com/files/less-1.1.5.min.js",
+      destination: jsPath
+   },
+   {
+      //name: "normalize.css",
+      url: "https://raw.github.com/necolas/normalize.css/master/normalize.css",
+      destination: cssPath
+   }
+];
+/* LIBS */
 
- /* PATHS */
- var jsPath  = "js",
-     cssPath = "css",
- /* PATHS */
-
- /* LIBS */
- var libs = [
-    {
-       name: "jquery.min.js", 
-       url : "http://code.jquery.com/jquery-1.7.1.min.js",
-       destination: jsPath
-    }
- ];
- /* LIBS */
-
- // Export our stack so pile can build it for us.
- Pile.stack = {
-    // the libs you listed, if we don't have them
-    // let us add them to our directory.
-    public: true,
-
-    // Know everything that's happening
-    verbose: true,
-
-    // The paths for us to create if they aren't there
-    paths: [
-       jsPath,
-       cssPath,
-       imgPath
-    ],
-
-    // The libs you want us to grab.
-    libs: libs
- };
+// Export our stack so pile can build it for us.
+Pile.stack = {
+   // the libs you listed, if we don't have them
+   // let us add them to our directory.
+   public: true,
+   
+   // Know everything that's happening
+   verbose: true,
+   
+   // Generate an a stubbed out HTML file?
+   // This will NOT override if the file already exists
+   generate: "index.html",
+   
+   // The paths for us to create if they aren't there
+   paths: [
+      jsPath,
+      cssPath
+   ],
+   
+   // The libs you want us to grab.
+   libs: libs
+};
