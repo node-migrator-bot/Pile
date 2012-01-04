@@ -2,8 +2,11 @@
     "author"        : "Wess Cope <wess@frenzylabs.com>",
     "name"          : "pilejs",
     "description"   : "An everything dev manager",
-    "version"       : "0.0.3",
+    "version"       : "0.0.4",
     "homepage"      : "www.pilejs.com",
+    "dependencies"  : {
+        "handlebars": "1.0.4beta"
+    },
     "repository"    : {
         "type"  : "git",
         "url"   : "git://github.com/wess/Pile.git"
