@@ -10,6 +10,6 @@
     },
     "engines"       : { "node"  : "~0.6.2"},
     "main"          : "./lib/pile",
-    "bin"           : {"pile": "./bin/pile"},
+    "bin"           : {"pile": "bin/pile"},
     "preferGlobal": true
 }
