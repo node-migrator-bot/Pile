@@ -2,7 +2,7 @@
     "author"        : "Wess Cope <wess@frenzylabs.com>",
     "name"          : "pilejs",
     "description"   : "An everything dev manager",
-    "version"       : "0.0.2",
+    "version"       : "0.0.3",
     "homepage"      : "www.pilejs.com",
     "repository"    : {
         "type"  : "git",
