@@ -16,14 +16,14 @@ setting up a basic web site structure.
 ---
 
 
-#### Installing
+### Installing
 
 To install just run:
 ``npm install -g pilejs``
 
 This will install the command **pile**
 
-#### Usage
+### Usage
 
 In your terminal, cd into your projects directory and type:
 ``pile --init``
@@ -32,6 +32,9 @@ This will add a **stackfile** to your directory with some examples inside. Once 
 edited the **stackfile** with your setup and settings and bears, oh my! Just run: **pile**.
 That will create your directories, download defined files, and even create a stubbed out
 html file with your libraries already in it.
+
+A small static webserver is also included.  In whatever directory you want to serve from (great for testing for ajax
+and such), just run ``pile --server`` and open the url in your browser.
 
 ---
 
