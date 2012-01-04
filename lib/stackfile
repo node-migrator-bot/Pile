@@ -1,0 +1,47 @@
+/***
+ * This is an example Stackfile
+ */
+
+ // REMOVE 
+ console.log("---------------------------------\nPlease configure your stackfile\nbefore trying to run pile\n---------------------------------"); process.exit(-1);
+
+
+/* PATHS */
+var jsPath  = "your/javascript/path/",
+    cssPath = "your/css/path/",
+    anyPath = "a/path/to/whatever";
+/* PATHS */
+
+/* LIBS */
+var libs = [
+   "just-a-lib-name", // We can try to find it for you.
+   
+   { 
+      // Lib name : url to download it.
+      LibName : "http://url/to/download.js",
+
+      // Where you want us to put it
+      destination: somePath
+   }
+];
+/* LIBS */
+
+// Export our stack so pile can build it for us.
+Pile.stack = {
+   // the libs you listed, if we don't have them
+   // let us add them to our directory.
+   public: true,
+   
+   // Know everything that's happening
+   verbose: true,
+   
+   // The paths for us to create if they aren't there
+   paths: [
+      jsPath,
+      cssPath,
+      imgPath
+   ],
+   
+   // The libs you want us to grab.
+   libs: libs
+};
