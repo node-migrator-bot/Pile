@@ -1,0 +1,218 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'pilejs' ]
+info using npm@1.0.106
+info using node@v0.6.2
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/wcope/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+silly exec /usr/local/bin/node "/usr/local/lib/node_modules/npm/bin/npm-get-uid-gid.js" "nobody" 20
+silly spawning [ '/usr/local/bin/node',
+silly spawning   [ '/usr/local/lib/node_modules/npm/bin/npm-get-uid-gid.js',
+silly spawning     'nobody',
+silly spawning     20 ],
+silly spawning   null ]
+silly output from getuid/gid {"uid":-2,"gid":20}
+silly output from getuid/gid 
+verbose into /usr/local/lib [ 'pilejs' ]
+verbose cache add pilejs
+verbose cache add [ 'pilejs', null ]
+silly cache add: name, spec, args [ undefined, 'pilejs', [ 'pilejs', null ] ]
+verbose parsed url { pathname: 'pilejs', path: 'pilejs', href: 'pilejs' }
+info addNamed [ 'pilejs', '' ]
+verbose addNamed [ null, '' ]
+verbose GET pilejs
+verbose raw, before any munging pilejs
+verbose url resolving [ 'https://registry.npmjs.org/', './pilejs' ]
+verbose url resolved https://registry.npmjs.org/pilejs
+verbose etag "43EK3RC0QWJLG0ZGL9G14OA33"
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"43EK3RC0QWJLG0ZGL9G14OA33"',
+silly get cb     date: 'Wed, 04 Jan 2012 21:24:50 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag pilejs from cache
+verbose GET pilejs/0.0.5
+verbose raw, before any munging pilejs/0.0.5
+verbose url resolving [ 'https://registry.npmjs.org/', './pilejs/0.0.5' ]
+verbose url resolved https://registry.npmjs.org/pilejs/0.0.5
+verbose etag "43EK3RC0QWJLG0ZGL9G14OA33"
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"43EK3RC0QWJLG0ZGL9G14OA33"',
+silly get cb     date: 'Wed, 04 Jan 2012 21:24:50 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag pilejs/0.0.5 from cache
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.8-darwin-x64-11.2.0',
+verbose bin dist   { shasum: '100105e83a74b7bbb9eb8d7532ae59f582e9f8b3',
+verbose bin dist     tarball: 'http://registry.npmjs.org/pilejs/-/pilejs-0.0.5.tgz' } ]
+silly testEngine { author: { name: 'Wess Cope', email: 'wess@frenzylabs.com' },
+silly testEngine   name: 'pilejs',
+silly testEngine   description: 'An everything dev manager',
+silly testEngine   version: '0.0.5',
+silly testEngine   homepage: 'www.pilejs.com',
+silly testEngine   dependencies: { handlebars: '1.0.4beta' },
+silly testEngine   repository: { type: 'git', url: 'git://github.com/wess/Pile.git' },
+silly testEngine   engines: { node: '~0.6.2' },
+silly testEngine   main: './lib/pile',
+silly testEngine   bin: { pile: 'lib/pile.js' },
+silly testEngine   preferGlobal: true,
+silly testEngine   _npmUser: { name: 'wess', email: 'wess@frenzylabs.com' },
+silly testEngine   _id: 'pilejs@0.0.5',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.2',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /Users/wcope/.npm/pilejs/0.0.5/package/package.json
+verbose loadDefaults pilejs@0.0.5
+silly resolved [ { author: { name: 'Wess Cope', email: 'wess@frenzylabs.com' },
+silly resolved     name: 'pilejs',
+silly resolved     description: 'An everything dev manager',
+silly resolved     version: '0.0.5',
+silly resolved     homepage: 'www.pilejs.com',
+silly resolved     dependencies: { handlebars: '1.0.4beta' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/wess/Pile.git' },
+silly resolved     engines: { node: '~0.6.2' },
+silly resolved     main: './lib/pile',
+silly resolved     bin: { pile: 'lib/pile.js' },
+silly resolved     preferGlobal: true,
+silly resolved     _npmUser: { name: 'wess', email: 'wess@frenzylabs.com' },
+silly resolved     _id: 'pilejs@0.0.5',
+silly resolved     devDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.0.106',
+silly resolved     _nodeVersion: 'v0.6.2',
+silly resolved     _defaultsLoaded: true,
+silly resolved     scripts: {} } ]
+info into /usr/local/lib pilejs@0.0.5
+info installOne pilejs@0.0.5
+info unbuild /usr/local/lib/node_modules/pilejs
+verbose from cache /Users/wcope/.npm/pilejs/0.0.5/package/package.json
+verbose mkdir (expected) error ENOENT, no such file or directory '/usr/local/lib/node_modules/___pilejs.npm'
+verbose mkdir done: /usr/local/lib/node_modules/___pilejs.npm 755
+verbose unpack_ uid, gid [ -2, 20 ]
+verbose unpackTarget /usr/local/lib/node_modules/pilejs
+silly gunzTarPerm modes [ '755', '644' ]
+silly spawning [ 'tar',
+silly spawning   [ '-zmvxpf', '/Users/wcope/.npm/pilejs/0.0.5/package.tgz', '-o' ],
+silly spawning   '/usr/local/lib/node_modules/___pilejs.npm' ]
+silly tar err x package/.gitignore
+silly tar err x package/package.json
+silly tar err x package/README.md
+silly tar err x package/lib/builder.js
+silly tar err x package/lib/criteria.js
+silly tar err x package/lib/ext.js
+silly tar err x package/lib/index.html
+silly tar err x package/lib/pile.js
+silly tar err x package/lib/server.js
+silly tar err x package/lib/stackfile
+silly tar exit 0
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/.gitignore
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/README.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/lib
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/lib/builder.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/lib/criteria.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/lib/ext.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/lib/index.html
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/lib/pile.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/lib/server.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___pilejs.npm/package/lib/stackfile
+verbose gunzed /usr/local/lib/node_modules/___pilejs.npm/package
+verbose rm'ed /usr/local/lib/node_modules/pilejs
+verbose renamed [ '/usr/local/lib/node_modules/___pilejs.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/pilejs' ]
+silly testEngine { author: { name: 'Wess Cope', email: 'wess@frenzylabs.com' },
+silly testEngine   name: 'pilejs',
+silly testEngine   description: 'An everything dev manager',
+silly testEngine   version: '0.0.5',
+silly testEngine   homepage: 'www.pilejs.com',
+silly testEngine   dependencies: { handlebars: '1.0.4beta' },
+silly testEngine   repository: { type: 'git', url: 'git://github.com/wess/Pile.git' },
+silly testEngine   engines: { node: '~0.6.2' },
+silly testEngine   main: './lib/pile',
+silly testEngine   bin: { pile: 'lib/pile.js' },
+silly testEngine   preferGlobal: true,
+silly testEngine   _npmUser: { name: 'wess', email: 'wess@frenzylabs.com' },
+silly testEngine   _id: 'pilejs@0.0.5',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.2',
+silly testEngine   _defaultsLoaded: true,
+silly testEngine   scripts: {} }
+verbose caching /usr/local/lib/node_modules/pilejs/package.json
+verbose loadDefaults pilejs@0.0.5
+info preinstall pilejs@0.0.5
+verbose from cache /usr/local/lib/node_modules/pilejs/package.json
+verbose into /usr/local/lib/node_modules/pilejs [ 'handlebars@1.0.4beta' ]
+verbose cache add handlebars@1.0.4beta
+verbose cache add [ 'handlebars@1.0.4beta', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'handlebars@1.0.4beta',
+silly cache add: name, spec, args   [ 'handlebars@1.0.4beta', null ] ]
+verbose parsed url { pathname: 'handlebars@1.0.4beta',
+verbose parsed url   path: 'handlebars@1.0.4beta',
+verbose parsed url   href: 'handlebars@1.0.4beta' }
+silly cache add: name, spec, args [ 'handlebars', '1.0.4beta', [ 'handlebars', '1.0.4beta' ] ]
+verbose parsed url { pathname: '1.0.4beta', path: '1.0.4beta', href: '1.0.4beta' }
+info addNamed [ 'handlebars', '1.0.4beta' ]
+verbose addNamed [ '1.0.4beta', '1.0.4beta' ]
+verbose GET handlebars/1.0.4beta
+verbose raw, before any munging handlebars/1.0.4beta
+verbose url resolving [ 'https://registry.npmjs.org/', './handlebars/1.0.4beta' ]
+verbose url resolved https://registry.npmjs.org/handlebars/1.0.4beta
+silly get cb [ 404,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     etag: '"34UKO8IYOAYH8MYZ3EZBMV5DS"',
+silly get cb     date: 'Wed, 04 Jan 2012 21:24:50 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '40' } ]
+verbose about to build /usr/local/lib/node_modules/pilejs
+ERR! error installing pilejs@0.0.5 Error: version not found: 1.0.4beta : handlebars/1.0.4beta
+ERR! error installing pilejs@0.0.5     at Request._callback (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:180:12)
+ERR! error installing pilejs@0.0.5     at Request.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:99:22)
+ERR! error installing pilejs@0.0.5     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:361:18)
+ERR! error installing pilejs@0.0.5     at Request.emit (events.js:67:17)
+ERR! error installing pilejs@0.0.5     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:327:16)
+ERR! error installing pilejs@0.0.5     at IncomingMessage.emit (events.js:88:20)
+ERR! error installing pilejs@0.0.5     at HTTPParser.onMessageComplete (http.js:137:23)
+ERR! error installing pilejs@0.0.5     at CleartextStream.ondata (http.js:1125:24)
+ERR! error installing pilejs@0.0.5     at CleartextStream._push (tls.js:363:27)
+ERR! error installing pilejs@0.0.5     at SecurePair.cycle (tls.js:679:20)
+info unbuild /usr/local/lib/node_modules/pilejs
+verbose from cache /usr/local/lib/node_modules/pilejs/package.json
+info preuninstall pilejs@0.0.5
+info uninstall pilejs@0.0.5
+verbose unbuild pilejs@0.0.5 [ true,
+verbose unbuild pilejs@0.0.5   '/usr/local/lib/node_modules',
+verbose unbuild pilejs@0.0.5   '/usr/local/lib/node_modules' ]
+verbose binRoot [ '/usr/local/bin', { pile: 'lib/pile.js' } ]
+info postuninstall pilejs@0.0.5
+verbose installOne cb pilejs@0.0.5
+ERR! Error: version not found: 1.0.4beta : handlebars/1.0.4beta
+ERR!     at Request._callback (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:180:12)
+ERR!     at Request.callback (/usr/local/lib/node_modules/npm/node_modules/request/main.js:99:22)
+ERR!     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:361:18)
+ERR!     at Request.emit (events.js:67:17)
+ERR!     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:327:16)
+ERR!     at IncomingMessage.emit (events.js:88:20)
+ERR!     at HTTPParser.onMessageComplete (http.js:137:23)
+ERR!     at CleartextStream.ondata (http.js:1125:24)
+ERR!     at CleartextStream._push (tls.js:363:27)
+ERR!     at SecurePair.cycle (tls.js:679:20)
+ERR! Report this *entire* log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "install" "-g" "pilejs"
+ERR! cwd /Users/wcope/Desktop/pile
+ERR! node -v v0.6.2
+ERR! npm -v 1.0.106
+verbose exit [ 1, true ]
