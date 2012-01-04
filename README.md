@@ -3,7 +3,7 @@
 ---
 
 Pile is a command line tool to help with boilerplate or any project file structure.
-Think of it like as a way to stream line the redundant effort it takes to setup a 
+Think of it like as a way to streamline the redundant effort it takes to setup a 
 directory structure when designing or creating an app.
 
 ---
